@@ -1,14 +1,17 @@
 import os
-import click
+import typer
 from dotenv import load_dotenv
-from binance_mcp_server.server import mcp
+from binance_mcp_server import mcp
 
 
-@click.command()
-@click.option("--api-key", required=True, help="Binance API key")
-@click.option("--api-secret", required=True, help="Binance API secret")
-def main(api_key, api_secret):
-    """Launch the MetaTrader MCP STDIO server."""
+app = typer.Typer(add_completion=True)
+
+
+@app.command()
+def binance_mcp_server(
+        api_key = typer.Option("", "--api-key", "-k", help="Binance API key", prompt=True, envvar="BINANCE_API_KEY"),
+        api_secret = typer.Option("", "--api-secret", "-s", help="Binance API secret", prompt=True, envvar="BINANCE_API_SECRET")
+    ):
     load_dotenv()
 
     os.environ["api_key"] = str(api_key)
@@ -18,4 +21,4 @@ def main(api_key, api_secret):
 
 
 if __name__ == "__main__":
-    main()
+    app()
