@@ -154,8 +154,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # 3. Install development dependencies
 uv install --dev
 
-# 4. Set up pre-commit hooks (optional but recommended)
-pre-commit install
+# 4. Set up pre-commit hooks (required for development)
+pre-commit install --hook-type commit-msg
 
 # 5. Run tests to verify setup
 pytest
@@ -230,9 +230,27 @@ Check our [GitHub Issues](https://github.com/AnalyticAce/binance-mcp-server/issu
 
 1. **Fork & Branch**: Create a feature branch from `main`
 2. **Code**: Follow our [coding standards](docs/contributing.md)
-3. **Test**: Add tests for new features (aim for >80% coverage)
-4. **Document**: Update documentation for user-facing changes
-5. **Review**: Submit a pull request for review
+3. **Pre-commit Hooks**: Install and configure pre-commit hooks for commit message validation
+4. **Test**: Add tests for new features (aim for >80% coverage)
+5. **Document**: Update documentation for user-facing changes
+6. **Review**: Submit a pull request for review
+
+### 🔧 Development Setup for Contributors
+
+```bash
+# Clone your fork
+git clone https://github.com/your-username/binance-mcp-server.git
+cd binance-mcp-server
+
+# Install dependencies and set up environment
+uv install --dev
+
+# Install pre-commit hooks (enforces commit message conventions)
+pre-commit install --hook-type commit-msg
+
+# Make your changes and commit using conventional format
+git commit -m "feat(tools): add new market data tool"
+```
 
 ### 🏷️ Issue Labels
 
@@ -244,9 +262,10 @@ Check our [GitHub Issues](https://github.com/AnalyticAce/binance-mcp-server/issu
 
 ### 📝 Development Standards
 
+- **Pre-commit Hooks**: Required for all contributors to ensure commit message consistency
 - **Type Hints**: Full type annotations required
 - **Testing**: pytest with >80% coverage target
-- **Commits**: Conventional commit format (`feat:`, `fix:`, etc.)
+- **Commits**: Conventional commit format (`feat:`, `fix:`, etc.) enforced by pre-commit hooks
 - **Documentation**: Google-style docstrings
 
 ## 🔒 Security & Best Practices
@@ -375,16 +394,10 @@ export BINANCE_TESTNET="true"
 - [ ] **Risk Management** - Margin monitoring and position limits
 
 ### 🔥 Phase 3: Advanced Features
-- [ ] **WebSocket Streaming** - Real-time data for responsive trading
 - [ ] **Advanced Analytics** - Technical indicators and market insights
 - [ ] **Alert System** - Price notifications and position monitoring
 - [ ] **Strategy Tools** - DCA, grid trading, and automation helpers
 
-### 🌟 Phase 4: Ecosystem Expansion
-- [ ] **Multi-Exchange Support** - Coinbase, Kraken, Bybit integration
-- [ ] **DeFi Integration** - Uniswap and DEX protocol support  
-- [ ] **AI-Driven Insights** - Machine learning market analysis
-- [ ] **Mobile Companion** - React Native or Flutter app
 
 ### 📈 Success Metrics
 - **Tool Coverage**: 26/26 core tools implemented ✅
