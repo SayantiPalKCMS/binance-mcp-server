@@ -2,6 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/binance-mcp-server.svg?style=flat&color=blue)](https://pypi.org/project/binance-mcp-server/) 
 [![Documentation Status](https://github.com/AnalyticAce/binance-mcp-server/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/AnalyticAce/binance-mcp-server/actions/workflows/deploy-docs.yml)
+[![PyPI Deployement Status](https://github.com/AnalyticAce/binance-mcp-server/actions/workflows/publish-package.yml/badge.svg)](https://github.com/AnalyticAce/binance-mcp-server/actions/workflows/publish-package.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -9,14 +10,12 @@ A powerful **Model Context Protocol (MCP) server** that enables AI agents to int
 
 ## 🎯 Key Features
 
-- **🔐 Secure Authentication**: API key-based authentication with Binance
-- **📊 Real-time Market Data**: Live price feeds, order book data, and market statistics
-- **💱 Trading Operations**: Place, modify, and cancel orders across spot and futures markets
-- **📈 Portfolio Management**: Account balance tracking, position monitoring, and P&L analysis
-- **🔔 Smart Notifications**: Real-time alerts for price movements, order fills, and market events
-- **📋 Comprehensive Logging**: Detailed audit trails for all trading activities
-- **🛡️ Risk Management**: Built-in safeguards and validation for trading operations
-- **🔄 WebSocket Support**: Real-time data streaming for responsive trading applications
+- **Secure Authentication**: API key-based authentication with Binance
+- **Real-time Market Data**: Live price feeds, order book data, and market statistics
+- **Trading Operations**: Place, modify, and cancel orders across spot and futures markets
+- **Portfolio Management**: Account balance tracking, position monitoring, and P&L analysis
+- **Smart Notifications**: Real-time alerts for price movements, order fills, and market events
+- **Risk Management**: Built-in safeguards and validation for trading operations
 
 ## 🚀 Quick Start
 
@@ -72,7 +71,7 @@ Configure your AI agent (Claude, GPT-4, or custom bot) to connect to the MCP ser
     }
   }
 }
-
+```
 ## 📚 Available Tools
 
 Our MCP server provides **26 comprehensive trading tools** that enable AI agents to perform advanced cryptocurrency trading operations. Each tool follows the Model Context Protocol standard for seamless integration.
@@ -127,17 +126,6 @@ Our MCP server provides **26 comprehensive trading tools** that enable AI agents
 | `get_asset_transfer` | Transfer assets between accounts | `fetch_asset_transfer`, `transfer_funds` |
 | `get_withdrawal_status` | Check withdrawal request status | `fetch_withdrawal_status`, `withdrawal_info` |
 
-## 🏗️ Architecture
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   AI Agent      │    │   MCP Server    │    │  Binance API    │
-│                 │◄──►│                 │◄──►│                 │
-│ • Claude        │    │ • Tool Router   │    │ • Spot Trading  │
-│ • GPT-4         │    │ • Auth Manager  │    │ • Futures       │
-│ • Custom Bots   │    │ • Data Parser   │    │ • Market Data   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
 
 ## 🔧 Configuration
 
@@ -240,11 +228,11 @@ Check our [GitHub Issues](https://github.com/AnalyticAce/binance-mcp-server/issu
 
 ### 📋 Contribution Guidelines
 
-1. **🍴 Fork & Branch**: Create a feature branch from `main`
-2. **💻 Code**: Follow our [coding standards](docs/contributing.md)
-3. **🧪 Test**: Add tests for new features (aim for >80% coverage)
-4. **📖 Document**: Update documentation for user-facing changes
-5. **🔍 Review**: Submit a pull request for review
+1. **Fork & Branch**: Create a feature branch from `main`
+2. **Code**: Follow our [coding standards](docs/contributing.md)
+3. **Test**: Add tests for new features (aim for >80% coverage)
+4. **Document**: Update documentation for user-facing changes
+5. **Review**: Submit a pull request for review
 
 ### 🏷️ Issue Labels
 
@@ -264,11 +252,11 @@ Check our [GitHub Issues](https://github.com/AnalyticAce/binance-mcp-server/issu
 ## 🔒 Security & Best Practices
 
 ### 🛡️ API Security
-- **🔑 Credential Management**: Never commit API keys to version control
-- **🧪 Testnet First**: Always test with Binance testnet before live trading  
-- **⏰ Rate Limiting**: Built-in respect for Binance API rate limits
-- **✅ Input Validation**: Comprehensive validation of all trading parameters
-- **📝 Audit Logging**: Complete audit trail of all operations
+- **Credential Management**: Never commit API keys to version control
+- **Testnet First**: Always test with Binance testnet before live trading  
+- **Rate Limiting**: Built-in respect for Binance API rate limits
+- **Input Validation**: Comprehensive validation of all trading parameters
+- **Audit Logging**: Complete audit trail of all operations
 
 ### 🔐 Environment Security
 ```bash
@@ -412,13 +400,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🆘 Support & Community
 
 ### 📚 Documentation & Resources
-- **📖 [Complete Documentation](https://analyticace.github.io/binance-mcp-server/)** - Comprehensive guides and tutorials
+- **[Complete Documentation](https://analyticace.github.io/binance-mcp-server/)** - Comprehensive guides and tutorials
 
 ### 💬 Get Help
-- **🐛 [Report Issues](https://github.com/AnalyticAce/binance-mcp-server/issues)** - Bug reports and feature requests
-- **💡 [Discussions](https://github.com/AnalyticAce/binance-mcp-server/discussions)** - Community Q&A and ideas
-- **📧 [Email Support](mailto:dossehdosseh14@gmail.com)** - Technical questions and partnership inquiries
-- **🗣️ [Discord Community](https://discord.gg/mcp-binance)** - Real-time chat and support
+- **[Report Issues](https://github.com/AnalyticAce/binance-mcp-server/issues)** - Bug reports and feature requests
+- **[Discussions](https://github.com/AnalyticAce/binance-mcp-server/discussions)** - Community Q&A and ideas
+- **[Email Support](mailto:dossehdosseh14@gmail.com)** - Technical questions and partnership inquiries
+- **[Discord Community](https://discord.gg/mcp-binance)** - Real-time chat and support
 
 ### 🏷️ Quick Help Tags
 When creating issues, please use these labels to help us respond faster:
@@ -435,10 +423,10 @@ When creating issues, please use these labels to help us respond faster:
 **Important Notice**: This software is provided for educational and development purposes only. Cryptocurrency trading involves substantial risk of financial loss. 
 
 ### 📋 Risk Acknowledgment
-- **🎯 Testing Environment**: Always use Binance testnet for development and testing
-- **💰 Financial Risk**: Only trade with funds you can afford to lose
-- **🔍 Due Diligence**: Conduct thorough testing before deploying to live trading
-- **🚫 No Liability**: Developers assume no responsibility for financial losses
+- **Testing Environment**: Always use Binance testnet for development and testing
+- **Financial Risk**: Only trade with funds you can afford to lose
+- **Due Diligence**: Conduct thorough testing before deploying to live trading
+- **No Liability**: Developers assume no responsibility for financial losses
 
 ### 📄 License & Attribution
 
