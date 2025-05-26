@@ -406,7 +406,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **[Report Issues](https://github.com/AnalyticAce/binance-mcp-server/issues)** - Bug reports and feature requests
 - **[Discussions](https://github.com/AnalyticAce/binance-mcp-server/discussions)** - Community Q&A and ideas
 - **[Email Support](mailto:dossehdosseh14@gmail.com)** - Technical questions and partnership inquiries
-- **[Discord Community](https://discord.gg/mcp-binance)** - Real-time chat and support
 
 ### 🏷️ Quick Help Tags
 When creating issues, please use these labels to help us respond faster:
